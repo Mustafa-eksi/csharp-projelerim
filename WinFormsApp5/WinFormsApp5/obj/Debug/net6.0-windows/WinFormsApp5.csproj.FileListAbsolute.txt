@@ -1,0 +1,17 @@
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\bin\Debug\net6.0-windows\WinFormsApp5.exe
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\bin\Debug\net6.0-windows\WinFormsApp5.deps.json
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\bin\Debug\net6.0-windows\WinFormsApp5.runtimeconfig.json
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\bin\Debug\net6.0-windows\WinFormsApp5.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\bin\Debug\net6.0-windows\WinFormsApp5.pdb
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.csproj.AssemblyReference.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.Form1.resources
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.csproj.GenerateResource.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.AssemblyInfoInputs.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.AssemblyInfo.cs
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.csproj.CoreCompileInputs.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\refint\WinFormsApp5.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.pdb
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\WinFormsApp5.genruntimeconfig.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\WinFormsApp5\WinFormsApp5\obj\Debug\net6.0-windows\ref\WinFormsApp5.dll

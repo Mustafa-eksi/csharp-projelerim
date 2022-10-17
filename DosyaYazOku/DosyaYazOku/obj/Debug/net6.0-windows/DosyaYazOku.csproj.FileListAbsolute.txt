@@ -1,0 +1,17 @@
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\bin\Debug\net6.0-windows\DosyaYazOku.exe
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\bin\Debug\net6.0-windows\DosyaYazOku.deps.json
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\bin\Debug\net6.0-windows\DosyaYazOku.runtimeconfig.json
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\bin\Debug\net6.0-windows\DosyaYazOku.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\bin\Debug\net6.0-windows\DosyaYazOku.pdb
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.csproj.AssemblyReference.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.Form1.resources
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.csproj.GenerateResource.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.AssemblyInfoInputs.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.AssemblyInfo.cs
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.csproj.CoreCompileInputs.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\refint\DosyaYazOku.dll
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.pdb
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\DosyaYazOku.genruntimeconfig.cache
+C:\Users\musta\OneDrive\Masaüstü\c#\DosyaYazOku\DosyaYazOku\obj\Debug\net6.0-windows\ref\DosyaYazOku.dll
