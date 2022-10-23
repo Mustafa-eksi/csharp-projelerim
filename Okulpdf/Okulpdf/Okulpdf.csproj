@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Credfeto.ImageLoader.Raw" Version="1.0.21.26" />
+    <PackageReference Include="MuPDFCore" Version="1.6.0" />
+    <PackageReference Include="MuPDFCore.MuPDFRenderer" Version="1.6.0" />
+  </ItemGroup>
+
+</Project>

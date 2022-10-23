@@ -31,6 +31,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gorevtamamlandi = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label16 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -100,12 +101,22 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.gorevtamamlandi});
             this.dataGridView1.Location = new System.Drawing.Point(390, 88);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToDisplayedHeaders;
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(471, 278);
             this.dataGridView1.TabIndex = 9;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.dataGridView1.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_RowEnter);
+            // 
+            // gorevtamamlandi
+            // 
+            this.gorevtamamlandi.HeaderText = "gorevtamamlandi";
+            this.gorevtamamlandi.Name = "gorevtamamlandi";
+            this.gorevtamamlandi.Text = "tamam";
             // 
             // label16
             // 
@@ -449,5 +460,6 @@
         private Label label15;
         private Label label14;
         private DataGridView dataGridView1;
+        private DataGridViewButtonColumn gorevtamamlandi;
     }
 }

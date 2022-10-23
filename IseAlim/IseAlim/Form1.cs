@@ -57,12 +57,12 @@ namespace IseAlim
                         SqlCommand kisibil = new("select count(*) from basvurular;" + "select count(*) from basvurular where birim=" + birim.ToString(), con);
                         SqlDataReader okuyucu = kisibil.ExecuteReader();
                         if (okuyucu.Read()) { // Okuyucu okuyabildiyse
-                            tumkisi = okuyucu.GetInt32(0); // 0. sütundan (ilk) int32 al
+                            tumkisi = okuyucu.GetInt32(0)+1; // 0. sütundan (ilk) int32 al
                         }
                         okuyucu.NextResult(); // Sonraki sorgu satýrýna geç
                         if(okuyucu.Read())
                         {
-                            birimkisi = okuyucu.GetInt32(0);
+                            birimkisi = okuyucu.GetInt32(0)+1;
                         }
                         okuyucu.Close();
 
@@ -83,7 +83,7 @@ namespace IseAlim
                         cmd4.Parameters.AddWithValue("@alindi_mi", SqlDbType.VarChar).Value = "hayir";
                         cmd4.ExecuteNonQuery();
                         BaðlantýKapat();
-                        MessageBox.Show("Baþvurunuz kaydedildi.");
+                        MessageBox.Show("Baþvurunuz kaydedildi. Baþvuru numaranýz: "+basvuru_no);
                     }
                 } else
                 {
@@ -122,7 +122,7 @@ namespace IseAlim
                     DataTable tablo = new();
                     adaptor.Fill(tablo);
                     dataGridView1.DataSource = tablo;
-                    dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // birinci satýra, datagridview1 için verilmiþ enin hepsini kullandýrtýyor.
+                    //dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill; // birinci satýra, datagridview1 için verilmiþ enin hepsini kullandýrtýyor.
                 }
             }else // Bulamadýysa hata yazdýr
             {
@@ -130,6 +130,19 @@ namespace IseAlim
             }
             BaðlantýKapat();
             okuyucu.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if(e.RowIndex == 0)
+            {
+                MessageBox.Show("görev");
+            }
         }
     }
 }
