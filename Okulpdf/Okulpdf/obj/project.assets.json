@@ -143,40 +143,6 @@
           }
         }
       },
-      "Credfeto.ImageLoader.Interfaces/1.0.21.26": {
-        "type": "package",
-        "dependencies": {
-          "SixLabors.ImageSharp": "2.1.3"
-        },
-        "compile": {
-          "lib/net6.0/Credfeto.ImageLoader.Interfaces.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Credfeto.ImageLoader.Interfaces.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
-      "Credfeto.ImageLoader.Raw/1.0.21.26": {
-        "type": "package",
-        "dependencies": {
-          "Credfeto.ImageLoader.Interfaces": "1.0.21.26",
-          "Magick.NET-Q16-AnyCPU": "12.1.0",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/Credfeto.ImageLoader.Raw.dll": {
-            "related": ".pdb"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Credfeto.ImageLoader.Raw.dll": {
-            "related": ".pdb"
-          }
-        }
-      },
       "JetBrains.Annotations/10.3.0": {
         "type": "package",
         "dependencies": {
@@ -193,85 +159,7 @@
           }
         }
       },
-      "Magick.NET-Q16-AnyCPU/12.1.0": {
-        "type": "package",
-        "dependencies": {
-          "Magick.NET.Core": "12.1.0"
-        },
-        "compile": {
-          "lib/netstandard21/Magick.NET-Q16-AnyCPU.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard21/Magick.NET-Q16-AnyCPU.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "build/netstandard20/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/linux-arm64/native/Magick.Native-Q16-arm64.dll.so": {
-            "assetType": "native",
-            "rid": "linux-arm64"
-          },
-          "runtimes/linux-musl-x64/native/Magick.Native-Q16-x64.dll.so": {
-            "assetType": "native",
-            "rid": "linux-musl-x64"
-          },
-          "runtimes/linux-x64/native/Magick.Native-Q16-x64.dll.so": {
-            "assetType": "native",
-            "rid": "linux-x64"
-          },
-          "runtimes/osx-x64/native/Magick.Native-Q16-x64.dll.dylib": {
-            "assetType": "native",
-            "rid": "osx-x64"
-          },
-          "runtimes/win-arm64/native/Magick.Native-Q16-arm64.dll": {
-            "assetType": "native",
-            "rid": "win-arm64"
-          },
-          "runtimes/win-x64/native/Magick.Native-Q16-x64.dll": {
-            "assetType": "native",
-            "rid": "win-x64"
-          },
-          "runtimes/win-x86/native/Magick.Native-Q16-x86.dll": {
-            "assetType": "native",
-            "rid": "win-x86"
-          }
-        }
-      },
-      "Magick.NET.Core/12.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard21/Magick.NET.Core.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard21/Magick.NET.Core.dll": {
-            "related": ".xml"
-          }
-        }
-      },
-      "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
-        }
-      },
-      "Microsoft.NETCore.Platforms/5.0.0": {
+      "Microsoft.NETCore.Platforms/1.0.1": {
         "type": "package",
         "compile": {
           "lib/netstandard1.0/_._": {}
@@ -352,23 +240,6 @@
           }
         }
       },
-      "SixLabors.ImageSharp/2.1.3": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
-          "System.Text.Encoding.CodePages": "5.0.0"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SixLabors.ImageSharp.dll": {
-            "related": ".xml"
-          }
-        }
-      },
       "System.ComponentModel.Annotations/4.5.0": {
         "type": "package",
         "compile": {
@@ -415,38 +286,16 @@
           }
         }
       },
-      "System.Runtime.CompilerServices.Unsafe/5.0.0": {
+      "System.Runtime.CompilerServices.Unsafe/4.6.0": {
         "type": "package",
         "compile": {
-          "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
-          }
-        }
-      },
-      "System.Text.Encoding.CodePages/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.NETCore.Platforms": "5.0.0"
-        },
-        "compile": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtimeTargets": {
-          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
-            "assetType": "runtime",
-            "rid": "win"
           }
         }
       },
@@ -608,32 +457,6 @@
         "lib/netstandard2.0/Avalonia.Remote.Protocol.xml"
       ]
     },
-    "Credfeto.ImageLoader.Interfaces/1.0.21.26": {
-      "sha512": "z1s3FOoka6DU3BxyaC308V0OY6gZ9GL7hd55w1Pt3jWvBBsFVZZHNEkChlIgCXOhHHGaLxufEUcU7+z4IpBSbg==",
-      "type": "package",
-      "path": "credfeto.imageloader.interfaces/1.0.21.26",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "credfeto.imageloader.interfaces.1.0.21.26.nupkg.sha512",
-        "credfeto.imageloader.interfaces.nuspec",
-        "lib/net6.0/Credfeto.ImageLoader.Interfaces.dll",
-        "lib/net6.0/Credfeto.ImageLoader.Interfaces.pdb"
-      ]
-    },
-    "Credfeto.ImageLoader.Raw/1.0.21.26": {
-      "sha512": "KM1V/G0QS9p3U3gDJ/X4HN4qNKYdqaERKPZEJ51qN9RKAdhup6SEZ3wWUGMrP/3UAlozS1AdQ84ZYgxaUJHFdQ==",
-      "type": "package",
-      "path": "credfeto.imageloader.raw/1.0.21.26",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "credfeto.imageloader.raw.1.0.21.26.nupkg.sha512",
-        "credfeto.imageloader.raw.nuspec",
-        "lib/net6.0/Credfeto.ImageLoader.Raw.dll",
-        "lib/net6.0/Credfeto.ImageLoader.Raw.pdb"
-      ]
-    },
     "JetBrains.Annotations/10.3.0": {
       "sha512": "0GLU9lwGVXjUNlr9ZIdAgjqLI2Zm/XFGJFaqJ1T1sU+kwfeMLhm68+rblUrNUP9psRl4i8yM7Ghb4ia4oI2E5g==",
       "type": "package",
@@ -653,92 +476,18 @@
         "lib/portable-net4+sl5+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1/JetBrains.Annotations.xml"
       ]
     },
-    "Magick.NET-Q16-AnyCPU/12.1.0": {
-      "sha512": "maXWZxLlP4SmZWdTKB7dealzVkyjfxrRO4+lTdfU1oZ9dagvTW1sq24gFulcufy/XdiY0KqsuyF5u4ntfMKnIQ==",
+    "Microsoft.NETCore.Platforms/1.0.1": {
+      "sha512": "2G6OjjJzwBfNOO8myRV/nFrbTw5iA+DEm0N+qUqhrOmaVtn4pC77h38I1jsXGw5VH55+dPfQsqHD0We9sCl9FQ==",
       "type": "package",
-      "path": "magick.net-q16-anycpu/12.1.0",
+      "path": "microsoft.netcore.platforms/1.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
-        "Magick.NET.icon.png",
-        "Notice.linux-musl.txt",
-        "Notice.linux.txt",
-        "Notice.osx.txt",
-        "Notice.win.txt",
-        "build/netstandard20/Magick.NET-Q16-AnyCPU.targets",
-        "lib/netstandard20/Magick.NET-Q16-AnyCPU.dll",
-        "lib/netstandard20/Magick.NET-Q16-AnyCPU.xml",
-        "lib/netstandard21/Magick.NET-Q16-AnyCPU.dll",
-        "lib/netstandard21/Magick.NET-Q16-AnyCPU.xml",
-        "magick.net-q16-anycpu.12.1.0.nupkg.sha512",
-        "magick.net-q16-anycpu.nuspec",
-        "runtimes/linux-arm64/native/Magick.Native-Q16-arm64.dll.so",
-        "runtimes/linux-musl-x64/native/Magick.Native-Q16-x64.dll.so",
-        "runtimes/linux-x64/native/Magick.Native-Q16-x64.dll.so",
-        "runtimes/osx-x64/native/Magick.Native-Q16-x64.dll.dylib",
-        "runtimes/win-arm64/native/Magick.Native-Q16-arm64.dll",
-        "runtimes/win-x64/native/Magick.Native-Q16-x64.dll",
-        "runtimes/win-x86/native/Magick.Native-Q16-x86.dll"
-      ]
-    },
-    "Magick.NET.Core/12.1.0": {
-      "sha512": "F1xGmBx+cy9mnEnLlznfmItLRcagiZ3xKOYPbOexDPi8w9SuCfmyOXXz6haGQBDo5DQ7O/Q4knjaV5+gQW9ISA==",
-      "type": "package",
-      "path": "magick.net.core/12.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Copyright.txt",
-        "Magick.NET.icon.png",
-        "lib/netstandard20/Magick.NET.Core.dll",
-        "lib/netstandard20/Magick.NET.Core.xml",
-        "lib/netstandard21/Magick.NET.Core.dll",
-        "lib/netstandard21/Magick.NET.Core.xml",
-        "magick.net.core.12.1.0.nupkg.sha512",
-        "magick.net.core.nuspec"
-      ]
-    },
-    "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
-      "sha512": "xlzi2IYREJH3/m6+lUrQlujzX8wDitm4QGnUu6kUXTQAWPuZY8i+ticFJbzfqaetLA6KR/rO6Ew/HuYD+bxifg==",
-      "type": "package",
-      "path": "microsoft.extensions.dependencyinjection.abstractions/6.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyInjection.Abstractions.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/net461/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/net6.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-        "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.xml",
-        "microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
-        "microsoft.extensions.dependencyinjection.abstractions.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "Microsoft.NETCore.Platforms/5.0.0": {
-      "sha512": "VyPlqzH2wavqquTcYpkIIAQ6WdenuKoFN0BdYBbCWsclXacSOHNQn66Gt4z5NBqEYW0FAPm5rlvki9ZiCij5xQ==",
-      "type": "package",
-      "path": "microsoft.netcore.platforms/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
-        "microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+        "microsoft.netcore.platforms.1.0.1.nupkg.sha512",
         "microsoft.netcore.platforms.nuspec",
-        "runtime.json",
-        "useSharedDesignerContext.txt",
-        "version.txt"
+        "runtime.json"
       ]
     },
     "Microsoft.NETCore.Targets/1.0.1": {
@@ -788,28 +537,6 @@
         "lib/netstandard2.0/MuPDFCore.MuPDFRenderer.xml",
         "mupdfcore.mupdfrenderer.1.6.0.nupkg.sha512",
         "mupdfcore.mupdfrenderer.nuspec"
-      ]
-    },
-    "SixLabors.ImageSharp/2.1.3": {
-      "sha512": "8yonNRWX3vUE9k29ta0Hbfa0AEc0hbDjSH/nZ3vOTJEXmY6hLnGsjDKoz96Z+AgOsrdkAu6PdL/Ebaf70aitzw==",
-      "type": "package",
-      "path": "sixlabors.imagesharp/2.1.3",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/net472/SixLabors.ImageSharp.dll",
-        "lib/net472/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp2.1/SixLabors.ImageSharp.xml",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.dll",
-        "lib/netcoreapp3.1/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.0/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.0/SixLabors.ImageSharp.xml",
-        "lib/netstandard2.1/SixLabors.ImageSharp.dll",
-        "lib/netstandard2.1/SixLabors.ImageSharp.xml",
-        "sixlabors.imagesharp.128.png",
-        "sixlabors.imagesharp.2.1.3.nupkg.sha512",
-        "sixlabors.imagesharp.nuspec"
       ]
     },
     "System.ComponentModel.Annotations/4.5.0": {
@@ -1044,75 +771,27 @@
         "system.runtime.nuspec"
       ]
     },
-    "System.Runtime.CompilerServices.Unsafe/5.0.0": {
-      "sha512": "ZD9TMpsmYJLrxbbmdvhwt9YEgG5WntEnZ/d1eH8JBX9LBp+Ju8BSBhUGbZMNVHHomWo2KVImJhTDl2hIgw/6MA==",
+    "System.Runtime.CompilerServices.Unsafe/4.6.0": {
+      "sha512": "HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
       "type": "package",
-      "path": "system.runtime.compilerservices.unsafe/5.0.0",
+      "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
-        "lib/net45/System.Runtime.CompilerServices.Unsafe.dll",
-        "lib/net45/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/net461/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
         "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
-        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.dll",
-        "ref/netstandard2.1/System.Runtime.CompilerServices.Unsafe.xml",
-        "system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512",
         "system.runtime.compilerservices.unsafe.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
-    "System.Text.Encoding.CodePages/5.0.0": {
-      "sha512": "NyscU59xX6Uo91qvhOs2Ccho3AR2TnZPomo1Z0K6YpyztBPM/A5VbkzOO19sy3A3i1TtEnTxA7bCe3Us+r5MWg==",
-      "type": "package",
-      "path": "system.text.encoding.codepages/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.dll",
-        "lib/net461/System.Text.Encoding.CodePages.xml",
-        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.xml",
-        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
-        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.xml",
-        "system.text.encoding.codepages.5.0.0.nupkg.sha512",
-        "system.text.encoding.codepages.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -1164,7 +843,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "Credfeto.ImageLoader.Raw >= 1.0.21.26",
       "MuPDFCore >= 1.6.0",
       "MuPDFCore.MuPDFRenderer >= 1.6.0"
     ]
@@ -1213,10 +891,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "Credfeto.ImageLoader.Raw": {
-            "target": "Package",
-            "version": "[1.0.21.26, )"
-          },
           "MuPDFCore": {
             "target": "Package",
             "version": "[1.6.0, )"

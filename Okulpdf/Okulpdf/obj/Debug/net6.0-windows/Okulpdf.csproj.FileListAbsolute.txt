@@ -46,16 +46,3 @@ C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\obj\Debug\net6.0-windows\r
 C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\obj\Debug\net6.0-windows\Okulpdf.pdb
 C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\obj\Debug\net6.0-windows\Okulpdf.genruntimeconfig.cache
 C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\obj\Debug\net6.0-windows\ref\Okulpdf.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\Credfeto.ImageLoader.Interfaces.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\Credfeto.ImageLoader.Raw.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\Magick.NET-Q16-AnyCPU.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\Magick.NET.Core.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\SixLabors.ImageSharp.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\linux-arm64\native\Magick.Native-Q16-arm64.dll.so
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\linux-musl-x64\native\Magick.Native-Q16-x64.dll.so
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\linux-x64\native\Magick.Native-Q16-x64.dll.so
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\osx-x64\native\Magick.Native-Q16-x64.dll.dylib
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Magick.Native-Q16-arm64.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\win-x64\native\Magick.Native-Q16-x64.dll
-C:\Users\musta\OneDrive\Masaüstü\c#\Okulpdf\Okulpdf\bin\Debug\net6.0-windows\runtimes\win-x86\native\Magick.Native-Q16-x86.dll

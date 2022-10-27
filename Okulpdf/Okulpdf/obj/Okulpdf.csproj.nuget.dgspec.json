@@ -44,10 +44,6 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
-            "Credfeto.ImageLoader.Raw": {
-              "target": "Package",
-              "version": "[1.0.21.26, )"
-            },
             "MuPDFCore": {
               "target": "Package",
               "version": "[1.6.0, )"

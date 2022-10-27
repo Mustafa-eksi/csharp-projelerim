@@ -18,13 +18,8 @@ C:\Users\musta\.nuget\packages\avalonia\0.10.0\lib\netcoreapp2.0\Avalonia.Stylin
 C:\Users\musta\.nuget\packages\avalonia\0.10.0\lib\netcoreapp2.0\Avalonia.Themes.Default.dll
 C:\Users\musta\.nuget\packages\avalonia\0.10.0\lib\netcoreapp2.0\Avalonia.Themes.Fluent.dll
 C:\Users\musta\.nuget\packages\avalonia\0.10.0\lib\netcoreapp2.0\Avalonia.Visuals.dll
-C:\Users\musta\.nuget\packages\credfeto.imageloader.interfaces\1.0.21.26\lib\net6.0\Credfeto.ImageLoader.Interfaces.dll
-C:\Users\musta\.nuget\packages\credfeto.imageloader.raw\1.0.21.26\lib\net6.0\Credfeto.ImageLoader.Raw.dll
 C:\Users\musta\.nuget\packages\jetbrains.annotations\10.3.0\lib\netstandard1.0\JetBrains.Annotations.dll
-C:\Users\musta\.nuget\packages\magick.net-q16-anycpu\12.1.0\lib\netstandard21\Magick.NET-Q16-AnyCPU.dll
-C:\Users\musta\.nuget\packages\magick.net.core\12.1.0\lib\netstandard21\Magick.NET.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\Microsoft.CSharp.dll
-C:\Users\musta\.nuget\packages\microsoft.extensions.dependencyinjection.abstractions\6.0.0\lib\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\Microsoft.VisualBasic.Core.dll
 C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.8\ref\net6.0\Microsoft.VisualBasic.dll
 C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.8\ref\net6.0\Microsoft.VisualBasic.Forms.dll
@@ -36,7 +31,6 @@ C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\mscorli
 C:\Users\musta\.nuget\packages\mupdfcore\1.6.0\lib\netstandard2.0\MuPDFCore.dll
 C:\Users\musta\.nuget\packages\mupdfcore.mupdfrenderer\1.6.0\lib\netstandard2.0\MuPDFCore.MuPDFRenderer.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\netstandard.dll
-C:\Users\musta\.nuget\packages\sixlabors.imagesharp\2.1.3\lib\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\System.AppContext.dll
 C:\Program Files\dotnet\packs\Microsoft.NETCore.App.Ref\6.0.8\ref\net6.0\System.Buffers.dll
 C:\Program Files\dotnet\packs\Microsoft.WindowsDesktop.App.Ref\6.0.8\ref\net6.0\System.CodeDom.dll
