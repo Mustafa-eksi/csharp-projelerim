@@ -15,7 +15,7 @@ namespace Okulpdf
     {
         int page = 0;
         double zoom = 1;
-        string documentpath = "C:\\Users\\musta\\OneDrive\\Masaüstü\\dosyalarým\\Okunacaklar\\yabancý_seyahatnamelere_göre_osmanlýda_hayvan.pdf";
+        string documentpath = "C:\\Users\\musta\\yabanci_seyahatnamelere_gore_osmanlida_hayvan.pdf";
         int vslider_old = 0;
         int hslider_old = 0;
         MuPDFCore.Rectangle r;

@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "exceljs": "^4.3.0",
+    "qr-image": "^3.2.0"
+  }
+}
