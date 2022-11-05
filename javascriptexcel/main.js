@@ -1,9 +1,7 @@
 const excel = require('exceljs');
 const workbook = new excel.Workbook();
 const filename = 'excel.xlsx';
-//const qrcode = require("qrcode.min.js");
 var qr = require('qr-image');
-
 
 function kartidOlustur() {
     var kartid = "05";
@@ -13,10 +11,27 @@ function kartidOlustur() {
     }
     return kartid;
 }
-
+var kisisayisi = 0;
 workbook.xlsx.readFile(filename).then(()=>{
     const worksheet = workbook.getWorksheet('Sheet1');
-    for(var i = 2; i <= worksheet.rowCount; i++) {
+    var hicgirmedimi = false;
+    while(!hicgirmedimi) {
+        hicgirmedimi = true;
+        for(var i = 2; i <= worksheet.rowCount; i++) {
+            if(i == worksheet.rowCount) {
+                worksheet.addRow(['']);
+                worksheet.spliceRows(i, 1);
+                break;
+            }
+            const row = worksheet.getRow(i);
+            if(row.getCell('A').value == null || row.getCell('B').value == null || row.getCell('C').value == null) {
+                hicgirmedimi = false;
+                worksheet.spliceRows(i, 1);
+            }
+        }
+    }
+    console.log("Boşlar silindi.");
+    for(var i = 2; i < worksheet.rowCount; i++) {
         const row = worksheet.getRow(i);
         if(row.getCell('D').value != null) {
             continue;
@@ -24,10 +39,10 @@ workbook.xlsx.readFile(filename).then(()=>{
         var yil = row.getCell('A').value.toString();
         const adsoyad = row.getCell('B').value;
         const rol_ham = row.getCell('C').value.toString();
+        
         var rolsayi = 1;
         for(var j = 2; j < i; j++) {
             if(worksheet.getRow(j).getCell('C').value == rol_ham) {
-                //console.log("i: " + i + ", " +worksheet.getRow(j).getCell('C').value)
                 rolsayi++;
             }
         }
@@ -39,7 +54,7 @@ workbook.xlsx.readFile(filename).then(()=>{
         }
         
         var sicilno = yil.charAt(3) + rol + rolsayi + 'T' + (i-1);
-        var kartid = '0572894';
+        var kartid;
         for(var k = 2; k <= worksheet.rowCount; k++) {
             const kartid1 = worksheet.getRow(k).getCell('E').value;
             if(kartid  == kartid1) {
@@ -48,17 +63,26 @@ workbook.xlsx.readFile(filename).then(()=>{
         }
         var qr_svg = qr.image(kartid, { type: 'png' });
         qr_svg.pipe(require('fs').createWriteStream("./qrlar/"+adsoyad+'.png'));
-        
-        //console.log(kartid);
         worksheet.getCell('D'+i).value = sicilno;
         worksheet.getCell('E'+i).value = kartid;
-        console.log(worksheet.getCell('D'+i).value)
+        kisisayisi++;
+        //console.log(worksheet.getCell('D'+i).value)
     }
+}).catch((err)=> {
+    console.error("Bilinmeyen bir hata oluştu.");
 }).finally(()=> {
-    console.log("İşlem başladı");
+    console.log("Yazma işlemi başladı");
     workbook.xlsx.writeFile(filename).then(()=>{
-        console.log("İşlem başarılı");
+        console.log("İşlem başarılı, programı kapatabilirsiniz. Şu kadar kişinin sicilnosu ve kartidsi üretildi: " + kisisayisi);
+        var bos = 0;
+        while(true) {
+            bos++;
+        }
         }).catch((E)=> {
             console.error("Excel dosyasını kapatınız.");
+            var bos2 = 0;
+            while(true) {
+                bos2++;
+            }
         });
 })
