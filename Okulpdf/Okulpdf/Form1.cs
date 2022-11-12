@@ -8,6 +8,7 @@ using Avalonia.Media;
 using Color = System.Drawing.Color;
 using Brush = System.Drawing.Brush;
 using Brushes = System.Drawing.Brushes;
+using System.Security.Cryptography;
 
 namespace Okulpdf
 {
@@ -19,7 +20,7 @@ namespace Okulpdf
         int vslider_old = 0;
         int hslider_old = 0;
         MuPDFCore.Rectangle r;
-        
+        byte[] Sayfa;
         public Form1()
         {
             InitializeComponent();
@@ -39,19 +40,15 @@ namespace Okulpdf
                 r.Y1 = (int)d.Pages[page].Bounds.Height;
             }
             
-            //pictureBox1.Image = null;
-            //DateTime btimes = DateTime.Now;
-            byte[] bytes = d.Render(page, r, zoom, PixelFormats.RGBA);
-            //DateTime atimes = DateTime.Now;
-            //MessageBox.Show("Süre: " + (atimes - btimes));
+            Sayfa = d.Render(page, r, zoom, PixelFormats.RGBA);
             float x = r.X0 * (float)zoom;
             float y = r.Y0 * (float)zoom;
             float x2 = r.X1 * (float)zoom;
             float y2 = r.Y1 * (float)zoom;
+            // TODO: Bu fonksiyon scrollbar her hareket ettiðinde çaðrýlýyor. Bunun yerine sadece sayfa deðiþtiðinde çaðýrýp scrollbar ve yakýnlaþtýrma butonlarýna basýldýðýnda eldeki byte dizisini deðiþtirerek göstermeliyim. Ama bu yöntemi ilk önce scrollbar hareketine uygulayacaðým.
             RoundedRectangle roundedRectangle = new MuPDFCore.Rectangle(x, y, x2, y2).Round();
             int w = roundedRectangle.Width;
             int h = roundedRectangle.Height;
-            //MessageBox.Show("bytes length: " + bytes.Length + ", w*h*4: "+(w*h*4).ToString() + ", (bytes.length/4)/h ve width" + (bytes.Length / 4) / h + " ve " + r.Width );
             Bitmap bitmap = new Bitmap(w, h, PixelFormat.Format32bppPArgb);
             graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.High;
             int wb = w * 4;
@@ -62,7 +59,7 @@ namespace Okulpdf
                 for (int k = 0; k < h; k++)
                 {
                     int pos = wb*k + j*4;
-                    int a = bytes[pos + 3];
+                    int a = Sayfa[pos + 3];
                     //int r = bytes[pos];
                     //int b = bytes[pos + 1];
                     //int g = bytes[pos + 2];
@@ -70,27 +67,10 @@ namespace Okulpdf
                     i += 4;
                 }
             }
-            //Graphics grap = Graphics.FromImage(bitmap);
             graphics.Clear(Color.FromArgb(255, 255, 255, 255));
             graphics.DrawImage(bitmap, 1, 1, bitmap.Width, bitmap.Height);
-            
-            //pictureBox1.Image = bitmap;
         }
-        /*private void OldReadPage(MuPDFDocument d, bool reset=false)
-        {
-            if(reset)
-            {
-                r.X0 = 0;
-                r.Y0 = 0;
-                r.X1 = d.Pages[page].Bounds.Width;
-                r.Y1 = d.Pages[page].Bounds.Height;
-            }
-            pictureBox1.Image = null;
-            d.SaveImage(page, r, zoom, PixelFormats.RGBA, pathout+"output"+page.ToString()+ i.ToString() + ".png", RasterOutputFileTypes.PNG);
-            
-            pictureBox1.Image = Image.FromFile(pathout + "output" + page.ToString() + i.ToString() + ".png");
-            i++;
-        }*/
+
         private void OpenDocument(string path)
         {
             document = new(ctx, path);
