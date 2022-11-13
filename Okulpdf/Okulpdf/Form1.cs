@@ -32,6 +32,7 @@ namespace Okulpdf
         
         private void ReadPage(MuPDFDocument d, bool reset = false)
         {
+            
             if(graphics == null) // Her seferinde pictureBox1.CreateGraphics çaðýrýlmasýn
                 graphics = pictureBox1.CreateGraphics();
 
@@ -43,6 +44,7 @@ namespace Okulpdf
                 r.Y1 = (int)d.Pages[page].Bounds.Height;
             }
             byte[] bytes = d.Render(page, r, zoom, PixelFormats.RGBA);
+            
             float x = r.X0 * (float)zoom;
             float y = r.Y0 * (float)zoom;
             float x2 = r.X1 * (float)zoom;
@@ -88,9 +90,10 @@ namespace Okulpdf
             double scale = Math.Min(zoom * 1000 / Sayfa.Width, zoom * 1000 / Sayfa.Height);
             graphics.Clear(Color.FromArgb(255, 255, 255, 255));
             
-            System.Drawing.Rectangle draw_r = new System.Drawing.Rectangle((int)r.X0, (int)r.Y0, (int)r.Width, (int)r.Height);
-            
-            graphics.DrawImage(Sayfa, 0, 0, r.Width, r.Height);
+            System.Drawing.Rectangle draw_r = new System.Drawing.Rectangle((int)r.X0, (int)r.Y0, (int)r.Width, 200);
+            Bitmap yeni = Sayfa.Clone(draw_r, PixelFormat.Format32bppPArgb);
+            graphics.DrawImage(yeni, 0, 0, r.Width, r.Height);
+            yeni.Dispose();
         }
 
         private void OpenDocument(string path)
