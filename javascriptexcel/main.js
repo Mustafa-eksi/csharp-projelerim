@@ -67,6 +67,7 @@ workbook.xlsx.readFile(filename).then(async ()=>{
             switch(rol_ham) {
                 case "Yazılımcı":{ rol = 'Yz'; break;}
                 case "Yardımcı":{ rol = 'Yr'; break;}
+                case "Boş işler müdürü":{rol = 'Bo'; break;}
                 default: rol = 'Belirsiz';
             }
             let mevcutsayi = 1;

@@ -21,8 +21,10 @@ namespace Okulpdf
         int hslider_old = 0;
         MuPDFCore.Rectangle r;
         Bitmap Sayfa;
+        Bitmap PageShowing;
         Graphics graphics;
         int scaledW = 0, scaledH = 0;
+        bool IsScrolling = false;
         public Form1()
         {
             InitializeComponent();
@@ -81,19 +83,27 @@ namespace Okulpdf
             double scale = Math.Min(zoom*1000/Sayfa.Width, zoom*1000/Sayfa.Height);
             scaledW = Convert.ToInt32(Sayfa.Width * scale);
             scaledH = Convert.ToInt32(Sayfa.Height * scale);
+            r.Y1 = scaledH;
+            r.X1 = scaledW;
+            vScrollBar1.Height = (int)r.Height;
             graphics.Clear(Color.FromArgb(255, 255, 255, 255));
             graphics.DrawImage(Sayfa, 0, 0, scaledW, scaledH);
         }
         
         void ScrollWithoutRendering()
         {
+            if (IsScrolling)
+                return;
+            else
+                IsScrolling = true;
             double scale = Math.Min(zoom * 1000 / Sayfa.Width, zoom * 1000 / Sayfa.Height);
             graphics.Clear(Color.FromArgb(255, 255, 255, 255));
             
             System.Drawing.Rectangle draw_r = new System.Drawing.Rectangle((int)r.X0, (int)r.Y0, (int)r.Width, 200);
-            Bitmap yeni = Sayfa.Clone(draw_r, PixelFormat.Format32bppPArgb);
-            graphics.DrawImage(yeni, 0, 0, r.Width, r.Height);
-            yeni.Dispose();
+            MessageBox.Show("x0: " + r.X0 + ", y0: " + r.Y0 + ", y1: " + r.Y1 + ", w: " + r.Width);
+            PageShowing = Sayfa.Clone(draw_r, PixelFormat.Format32bppPArgb);
+            graphics.DrawImage(PageShowing, 0, 0, r.Width, r.Height);
+            IsScrolling = false;
         }
 
         private void OpenDocument(string path)
@@ -196,6 +206,7 @@ namespace Okulpdf
 
         private void hScrollBar1_Scroll(object sender, ScrollEventArgs e)
         {
+            
             if (hslider_old - hScrollBar1.Value > 20)
             {
                 r.X0 -= hScrollBar1.Value;
@@ -222,17 +233,21 @@ namespace Okulpdf
 
         private void vScrollBar1_ValueChanged(object sender, EventArgs e)
         {
+            var scrollTrackSpace = Sayfa.Height - pictureBox1.Height; // (600 - 200) = 400 
+            var scrollThumbSpace = pictureBox1.Height - vScrollBar1.Height; // (200 - 50) = 150
+            var scrollJump = scrollTrackSpace / scrollThumbSpace; //  (400 / 150 ) = 2.666666666666667
+
             if (vslider_old - vScrollBar1.Value > 20)
             {
                 // Yukarýya kaydýrýrken
-                r.Y0 -= vScrollBar1.Value;
-                r.Y1 = vScrollBar1.Value;
+                r.Y0 -= scrollJump;
+                r.Y1 += scrollJump;
             }
             else if (vslider_old - vScrollBar1.Value < -20)
             {
                 // Aþaðý kaydýrýrken
-                r.Y0 += vScrollBar1.Value;
-                r.Y1 = vScrollBar1.Value;
+                r.Y0 += scrollJump;
+                r.Y1 -= scrollJump;
             } else
             {
                 return;
