@@ -3,6 +3,7 @@ const workbook = new excel.Workbook();
 const filename = 'excel.xlsx';
 const sqlite = require("sqlite3").verbose();
 var qr = require('qr-image');
+const fs = require('fs');
 
 const vt = new sqlite.Database('./data.db', sqlite.OPEN_READWRITE, (err) => {
     if(err) return console.error(err.message);
@@ -104,4 +105,9 @@ workbook.xlsx.readFile(filename).then(async ()=>{
     tekrarlilar.forEach((v)=>{
         console.log(v[0] + " tcknli " + v[1]);
     })
+    fs.writeFile('tekrarlilar.txt', tekrarlilar.join("\n"), function (err) {
+        if (err) return console.log(err);
+        console.log('Hello World > helloworld.txt');
+      });
+    console.log("Bitti.");
 })
